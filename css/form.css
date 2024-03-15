@@ -1,0 +1,32 @@
+.error {
+    color: red;
+    font-size: x-large;
+}
+
+.success {
+    color: green;
+    font-size: x-large;
+}
+
+form div {
+    text-align: center;
+    padding: 1em;
+}
+
+label, input, button, span, main a, select, textarea{
+    font-size: x-large;
+}
+
+button {
+    margin: 0.5em;
+    margin-left: 1em;
+    color: #ffffff;
+    background-color: #4c96d7;
+}
+
+@media screen and (min-width:800px) {
+    .management {
+        width: 30%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,112 @@
+#promotion {
+    background-image: url(/phpmotors/images/delorean.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#promotion h2 {
+    color: #4c96d7;
+}
+
+#promotion p {
+    height: 18rem;
+}
+
+#ownToday {
+    text-align: center;
+    width: 18em;
+    height: 5em;
+    margin: 0 auto;
+    background-image: url(/phpmotors/images/site/own_today.png);
+    background-repeat: no-repeat;
+}
+
+#review {
+    font-size: large;
+}
+
+#review li {
+    margin-bottom: 1em;
+}
+
+#upgrades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+}
+
+#upgrades > a > div {
+    background-color: #4c96d7;
+    border: 1px solid #3a3a3a;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+#upgrades > img {
+    text-align: center;
+    height: 100%;
+}
+
+#upgrades a {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 20px;
+}
+
+#upgrades a:nth-of-type(1) {
+    grid-area: 2/1/3/2;
+}
+
+#upgrades a:nth-of-type(2) {
+    grid-area: 2/2/3/3;
+}
+
+#upgrades a:nth-of-type(3) {
+    grid-area: 3/1/4/2;
+}
+
+#upgrades a:nth-of-type(4) {
+    grid-area: 3/2/4/3;
+}
+
+/* For Large Screen */
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 40rem 400px;
+    }
+
+    main h1 {
+        grid-area: 1/1/2/3;
+    }
+
+    #promotion {
+        grid-area: 2/1/3/3;
+        background-size: 80%;
+        background-position: center;
+    }
+
+    #promotion h2, #promotion p {
+        height: auto;
+        margin-left: 50px;
+        font-size: x-large;
+    }
+    
+    #ownToday {
+        text-align: left;
+        margin: 1em;
+        margin-left: 50px;
+        background-size: 100%;
+    }
+
+    #review {
+        grid-area: 3/2/4/3;
+    }
+
+    #upgrades {
+        grid-area: 3/1/4/2;
+    }
+    
+}

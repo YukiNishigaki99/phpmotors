@@ -1,0 +1,162 @@
+.colorScheme {
+    color: #bababa;
+    color: #8d8d8d;
+    color: #a6cbeb;
+    color: #4c96d7;
+    color: #3a3a3a;
+    color: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+* {
+    font-family: "Andale Mono", AndaleMono, monospace;
+    color: #3a3a3a;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header a {
+    font-size: xx-large;
+    margin: 1em;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #3a3a3a;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+nav li {
+    list-style-type: none;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #3a3a3a;
+    padding: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav li:hover {
+    color: #3a3a3a;
+    background-color: #4c96d7;
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    border-top: 5px solid #3a3a3a;
+}
+
+#lastUpdate {
+    font-size: medium;
+}
+
+#inv-display {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#inv-display a {
+    text-decoration: none;
+}
+
+#inv-display li {
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    border-radius: 10px;
+    list-style-type: none;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+#inv-display li img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+#inv-display h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4c96d7;
+}
+
+/* For Large Screen */
+@media screen and (min-width: 700px) {
+    body {
+    background-image: url(/phpmotors/images/site/small_check.jpg);
+    }
+
+    #container {
+        background-color: #ffffff;
+        width: 80%;
+        margin: 0 auto;
+        border: 5px solid #4c96d7;
+        border-radius: 10px;
+    }
+
+    /* For vehicle display in classification view */
+    #inv-display {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    #inv-display a {
+        display: grid;
+        grid-template-rows: 130px 5px 1fr 1fr;
+    }
+
+    #inv-display img {
+        margin: auto 0;
+    }
+
+    #inv-display h2 {
+        font-size: 1rem;
+        padding-top: 1rem;
+        border-top: #3a3a3a 1px solid;
+    }
+
+    #inv-display li {
+        max-width: 200px;
+        flex: 1 0 auto;
+        text-align: center;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #inv-display div {
+        width: 100%;
+    }
+}

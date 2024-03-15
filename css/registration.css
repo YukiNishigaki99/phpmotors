@@ -1,0 +1,41 @@
+.error {
+    color: red;
+}
+
+form {
+    margin-left: 2em;
+}
+
+form div {
+    text-align: center;
+    padding: 1em;
+}
+
+label, input, button {
+    font-size: xx-large;
+}
+
+p {
+    font-size: x-large;
+}
+
+button {
+    margin: 0.5em 0;
+    color: #ffffff;
+}
+
+button:nth-of-type(1) {
+    background-color: #3a3a3a;
+}
+
+button:nth-of-type(2) {
+    background-color: #4c96d7;
+}
+
+@media screen and (min-width:800px) {
+    form p {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
